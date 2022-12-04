@@ -13,18 +13,22 @@ public static class DayTwo
         var fileName = "PuzzleInput\\Day2.txt";
         var lines = File.ReadLines(fileName);
 
-        var scores = new List<int>();
+        var scoresPartOne = new List<int>();
+        var scoresPartTwo = new List<int>();
 
         foreach (var line in lines)
         {
-            //var thisScore = GetScorePartOne(line[0], line[2]);
-            var thisScore = GetScorePartTwo(line[0], line[2]);
+            var thisScorePartOne = GetScorePartOne(line[0], line[2]);
+            
+            scoresPartOne.Add(thisScorePartOne);
+            
+            var thisScorePartTwo = GetScorePartTwo(line[0], line[2]);
 
-            scores.Add(thisScore);
+            scoresPartTwo.Add(thisScorePartTwo);
         }
 
-        //Console.WriteLine($"Total points based on what we thought was the strategy guide: {scores.Sum()}");
-        Console.WriteLine($"Total points based on the actual strategy guide: {scores.Sum()}");
+        Console.WriteLine($"Total points based on what we thought was the strategy guide: {scoresPartOne.Sum()}");
+        Console.WriteLine($"Total points based on the actual strategy guide: {scoresPartTwo.Sum()}");
     }
 
     private static int GetScorePartOne(char playerOne, char playerTwo)
