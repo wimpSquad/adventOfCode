@@ -1,1 +1,2 @@
-﻿DayOne.Solve();
+﻿// DayOne.Solve();
+DayTwo.Solve();
