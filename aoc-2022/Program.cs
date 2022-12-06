@@ -9,3 +9,7 @@ DayTwo.Solve();
 Console.WriteLine();
 Console.WriteLine("Day Three ----------------------------");
 DayThree.Solve();
+
+Console.WriteLine();
+Console.WriteLine("Day Four ----------------------------");
+DayFour.Solve();
