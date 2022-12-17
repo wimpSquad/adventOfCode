@@ -14,6 +14,10 @@
 // Console.WriteLine("Day Four ----------------------------");
 // DayFour.Solve();
 
+// Console.WriteLine();
+// Console.WriteLine("Day Five ----------------------------");
+// DayFive.Solve();
+
 Console.WriteLine();
-Console.WriteLine("Day Five ----------------------------");
-DayFive.Solve();
+Console.WriteLine("Day Six ----------------------------");
+DaySix.Solve();
